@@ -63,7 +63,7 @@ public class Consumer {
 
         // 指定NameServer地址，多个地址以“;”分隔
         consumer.setNamesrvAddr(namesrvAddr);
-        // 设置不适用VIP通道
+        // 设置不使用VIP通道
         consumer.setVipChannelEnabled(false);
 
 
@@ -84,6 +84,7 @@ public class Consumer {
                             System.out.println("消费相应：Msg：" + messageExt.getMsgId() +
                                                 ",msgBody:" + messsageBody);
                         }
+
 
                     } catch (Exception e) {
                         e.printStackTrace();

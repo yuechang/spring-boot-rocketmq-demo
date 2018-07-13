@@ -59,8 +59,8 @@ public class Producer {
 
         // 指定NameServer地址，多个地址以";"隔开
         producer.setNamesrvAddr(namasrvAddr);
-        // 设置不适用VIP通道
-        producer.setVipChannelEnabled(false);
+        // 设置不使用VIP通道
+        //producer.setVipChannelEnabled(false);
 
 
         try {
